@@ -48,6 +48,8 @@ class Beer extends Beverage {
   }
 
 }
+//FATAL ERROR:
+// $duvel = new Beverage("blond", 3.5, "Duvel", 8.5);
 
 $duvel = new Beer("blond", 3.5, "Duvel", 8.5);
 
