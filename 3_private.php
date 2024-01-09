@@ -19,12 +19,10 @@ USE TYPEHINTING EVERYWHERE!
 
 class Beverage {
 
-  //properties
   private $color;
   private $price;
   private $temp;
 
-  //construct
   public function __construct(string $color, float $price, string $temp = "cold"){
 
     $this->color = $color;
@@ -33,7 +31,6 @@ class Beverage {
 
   }
 
-  //method
   public function getInfo () {
     echo "<br> This beverage is $this->temp and $this->color";
   }
@@ -53,7 +50,6 @@ class Beer extends Beverage {
 
   public function __construct(string $color, float $price, string $name, float $alcoholPercentage, string $temp = "cold") {
 
-
     //call parent construct
     parent::__construct($color, $price, $temp);
 
@@ -64,9 +60,7 @@ class Beer extends Beverage {
   public function getAlcoholPercentage () {
     return $this->alcoholPercentage;
   }
-  // public function getColor(){
-  //   return $this->color;
-  // }
+
 
   private function beerInfo() {
     return "Hi I'm $this->name and have an alcohol percentage of $this->alcoholPercentage and I have a " . $this->getColor() . " color.";
