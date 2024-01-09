@@ -55,7 +55,7 @@ $duvel = new Beer("blond", 3.5, "Duvel", 8.5);
 
 
 $duvel->getInfo();
-echo "<br> Temp is: $duvel->temp.";
+
 echo "<br> The alcohol% = $duvel->alcoholPercentage.";
 echo "<br> The alcohol% is " . $duvel->getAlcoholPercentage();
 echo "<br> The color is $duvel->color ";
